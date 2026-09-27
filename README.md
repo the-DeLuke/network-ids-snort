@@ -56,11 +56,11 @@ The scope of this project includes:
 
 | Step | Screenshot |
 |---|---|
-| Kali download page | ![Kali Webpage](./screenshots/fig1-kali-webpage.jpg) |
-| Pre-built VM options | ![Pre-built VMs](./screenshots/fig2-prebuilt-vms.jpg) |
-| VirtualBox Manager | ![VirtualBox Manager](./screenshots/fig3-virtualbox-manager.jpg) |
-| Kali login screen | ![Kali Login](./screenshots/fig4-kali-login.jpg) |
-| Kali desktop | ![Kali Desktop](./screenshots/fig5-kali-desktop.jpg) |
+| Kali download page | ![Kali Webpage](./screenshots/fig1-kali-webpage.png) |
+| Pre-built VM options | ![Pre-built VMs](./screenshots/fig2-prebuilt-vms.png) |
+| VirtualBox Manager | ![VirtualBox Manager](./screenshots/fig3-virtualbox-manager.png) |
+| Kali login screen | ![Kali Login](./screenshots/fig4-kali-login.png) |
+| Kali desktop | ![Kali Desktop](./screenshots/fig5-kali-desktop.png) |
 
 ---
 

@@ -95,6 +95,7 @@ ips = {
     variables = default_variables
 }
 ```
+![Snort Config](./screenshots/fig8.png). |
 
 ## 6. Detection Using Snort
 

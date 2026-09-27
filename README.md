@@ -113,6 +113,7 @@ ip a
 ```bash
 snort -c /etc/snort/snort.lua -i eth0 -A alert-fast
 ```
+![Snort Starting](./screenshots/fig10.png). |
 
 **Step 3 — Generate ICMP Traffic:**
 

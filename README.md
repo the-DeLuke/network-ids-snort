@@ -1,6 +1,6 @@
 # Network-Based Intrusion Detection System Using Snort
 
-**Author:** [Your Name]  
+**Author:** [Dany Geo Johnson]  
 **Environment:** Kali Linux (Oracle VirtualBox)  
 **Tool Used:** Snort (Open-Source NIDS)  
 **Classification:** Educational / Portfolio Project
@@ -120,12 +120,14 @@ snort -c /etc/snort/snort.lua -i eth0 -A alert-fast
 ```bash
 ping 8.8.8.8
 ```
+![ICMP ping](./screenshots/fig11.png). |
 
 **Step 4 — View Alerts:**
 
 ```bash
 "ICMP Packet Detected"
 ```
+![Alert](./screenshots/fig12.png). |
 
 ## 7. Conclusion
 

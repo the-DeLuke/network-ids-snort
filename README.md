@@ -70,7 +70,7 @@ The scope of this project includes:
 ```bash
 sudo apt install snort
 ```
-| Kali download page | (./screenshots/fig6-snort-install.png). |
+[](./screenshots/fig6-snort-install.png). |
 
 **Step 1 — Edit Local Rules:**
 ```bash

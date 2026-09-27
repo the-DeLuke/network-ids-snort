@@ -70,6 +70,7 @@ The scope of this project includes:
 ```bash
 sudo apt install snort
 ```
+(./screenshots/fig6-snort-install.png) 
 **Step 1 — Edit Local Rules:**
 ```bash
 cd /etc/snort/rules

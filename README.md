@@ -81,6 +81,8 @@ sudo nano local.rules
 ```bash
 alert icmp any any -> any any (msg:"ICMP Packet Detected"; sid:1000001; rev:1;)
 ```
+![Local Rules](./screenshots/fig7.png). |
+
 **Step 3 — Configure Detection in snort.lua:**
 ```bash
 cd /etc/snort

@@ -106,6 +106,8 @@ ip a
 ```
 ***Confirms the active network interface (typically eth0).***
 
+![eth0 ip](./screenshots/fig9.png). |
+
 **Step 2 — Start Snort:**
 
 ```bash

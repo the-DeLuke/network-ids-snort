@@ -64,8 +64,68 @@ The scope of this project includes:
 
 ---
 
-### 4.2 Installing Snort on Kali Linux
+## 5 Installing Snort on Kali Linux
 
 **Step 1 — Install Snort:**
 ```bash
 sudo apt install snort
+```
+**Step 1 — Edit Local Rules:**
+```bash
+cd /etc/snort/rules
+sudo nano local.rules
+```
+***Add a custom rule to detect ICMP traffic:***
+```bash
+alert icmp any any -> any any (msg:"ICMP Packet Detected"; sid:1000001; rev:1;)
+```
+**Step 3 — Configure Detection in snort.lua:**
+```bash
+cd /etc/snort
+sudo nano snort.lua
+```
+***Locate the 5. configure detection section and update the ips block:***
+```bash
+ips = {
+    rules = [[ include /etc/snort/rules/local.rules ]],
+    variables = default_variables
+}
+```
+
+## 6. Detection Using Snort
+
+**Step 1 — Check Interface / IP:**
+
+```bash
+ip a
+```
+***Confirms the active network interface (typically eth0).***
+
+**Step 2 — Start Snort:**
+
+```bash
+snort -c /etc/snort/snort.lua -i eth0 -A alert-fast
+```
+
+**Step 3 — Generate ICMP Traffic:**
+
+```bash
+ping 8.8.8.8
+```
+
+**Step 4 — View Alerts:**
+
+```bash
+"ICMP Packet Detected"
+```
+
+## 7. Conclusion
+
+This project demonstrated the practical implementation of a Network-Based Intrusion Detection System (NIDS) using Snort. Through installation and configuration on Kali Linux within a virtualized environment, the project showed how real-time monitoring and rule-based detection can identify malicious activity on a network.
+
+Hands-on work with Snort provided insight into how intrusion detection systems operate — from packet capture to rule-based alerting. By customizing detection rules (e.g., ICMP detection) and analyzing alert logs, the system proved effective at flagging unauthorized access attempts, scans, and other suspicious traffic.
+
+This reinforced theoretical IDS concepts while highlighting the value of open-source tools like Snort in building cost-effective, scalable network defense capabilities.
+
+
+## 8. Tools & Environment

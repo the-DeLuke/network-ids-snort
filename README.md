@@ -129,3 +129,9 @@ This reinforced theoretical IDS concepts while highlighting the value of open-so
 
 
 ## 8. Tools & Environment
+
+- **Hypervisor** — Oracle VirtualBox
+- **OS** — Kali Linux (Debian-based)
+- **IDS Tool** — Snort (open-source NIDS, maintained by Cisco)
+- **Test Traffic** — ICMP (ping) used to validate detection
+
